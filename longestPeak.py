@@ -8,8 +8,6 @@ def longestPeak(array):
 	if len(array) < 3:
 		return 0
 	for index in range(1, len(array)):
-		print(array[index])
-		print(currentPeak)
 		if array[index] > array[index - 1]:
 			if direction != 1:
 				if currentPeak != 0 and direction == -1:
