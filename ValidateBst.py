@@ -9,8 +9,7 @@ class BST:
 def validateBst(tree):
     # Write your code here.
     isValid = True
-	isValid = validateBstHelper(tree, float("-inf"), tree.value, tree.left, isValid)
-	isValid = validateBstHelper(tree, tree.value, float("inf"), tree.right, isValid)	
+	isValid = validateBstHelper(tree, float("-inf"), float("inf"), tree, isValid)
 	return isValid
 
 def validateBstHelper(tree, minimum, maximum, node, isValid):
