@@ -1,4 +1,4 @@
-#O(n) Time | O(d) Space where n is nodes in tree and d is depth of tree
+#O(n) Time | O(n) Space where n is nodes in tree 
 def inOrderTraverse(tree, array):
     # Write your code here.
     if tree is None:
@@ -8,7 +8,7 @@ def inOrderTraverse(tree, array):
 	array = inOrderTraverse(tree.right, array)
 	return array
 
-#O(n) Time | O(d) Space where n is nodes in tree and d is depth of tree
+#O(n) Time | O(n) Space where n is nodes in tree 
 def preOrderTraverse(tree, array):
     # Write your code here.
     if tree is None:
@@ -18,7 +18,7 @@ def preOrderTraverse(tree, array):
 	array = preOrderTraverse(tree.right, array)
 	return array
 
-#O(n) Time | O(d) Space where n is nodes in tree and d is depth of tree
+#O(n) Time | O(n) Space where n is nodes in tree 
 def postOrderTraverse(tree, array):
     # Write your code here.
     if tree is None:
