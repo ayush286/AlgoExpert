@@ -8,7 +8,7 @@ class BST:
 #O(n) Time | O(d) Space where n is total nodes in tree and d is depth of tree
 def validateBst(tree):
     # Write your code here.
-    isValid = True
+    	isValid = True
 	isValid = validateBstHelper(tree, float("-inf"), float("inf"), tree, isValid)
 	return isValid
 
